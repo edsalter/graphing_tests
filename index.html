@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+
+
+
+</head>
+
+<body ng-app='nvd3TestApp'>
+<div ng-controller="ExampleCtrl">
+    <nvd3-line-chart
+            data="exampleData"
+            showXAxis="true"
+            showYAxis="true"
+            tooltips="true"
+            interactive="true"
+            xAxisTickFormat="xAxisTickFormat_Time_Format()"
+            yAxisTickFormat="yAxisFormatFunction()"
+            height="600"
+            margin="{left:100,top:50,bottom:50,right:50}"
+            showLegend="true"
+            useInteractiveGuideline="true"
+            xAxisLabel="Time"
+            yAxisLabel="Price (£)"
+            >
+    </nvd3-line-chart>
+
+</div>
+
+
+
+<script src="build/js/lib.js"></script>
+
+<script src="build/js/concatenated-app.js"></script>
+
+
+<link rel="stylesheet" href="build/css/concat.css"/>
+
+</body>
+
+</html>

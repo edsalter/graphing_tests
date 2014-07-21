@@ -1,6 +1,6 @@
 var app = angular.module("nvd3TestApp", ['nvd3ChartDirectives']);
 
-function ExampleCtrl($scope, $http){
+function GraphController($scope, $http){
     $http.get('./build/js/data1.json').success(function(data){
         $scope.exampleData = data;
     });
